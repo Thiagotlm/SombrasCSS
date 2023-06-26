@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            margin: 20px auto;
+            background: lightgreen;
+            box-shadow: 10px 10px 15px black;
+        }
+        img{
+            width: 500px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+            filter: drop-shadow(10px 10px 5px grey);
+            opacity: .8;
+        }
+        h2{
+            color: blue;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 10px 10px 6px grey;
+        }
+        .exemplo{
+            overflow: visible;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #scroll{
+            overflow: scroll;
+        }
+        #auto{
+            overflow: auto;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+    <div></div><hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Dio_%28Logo%29.png" alt="">
+    <hr>
+    <h1>Propriedade <code>Text-shadow</code></h1>
+    <h2>Bem-vindo à trilha de CSS na DIO!</h2><hr>
+    <h2>Propriedade <code>overflow</code></h2>
+    <p>Controla como o conteúdo deve ser exibido</p>
+    <i>Exemplos:</i><br><br><br>
+    <code>overflow: visible</code>
+    <div class="exemplo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+    </div>
+    <br><br>
+    <code>overflow: hidden</code>
+    <div id="hidden" class="exemplo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+    </div>
+    <br><br>
+    <code>overflow: scroll</code>
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+    </div>
+    <br><br>
+     <code>overflow: auto</code>
+    <div id="auto" class="exemplo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nobis quas animi, voluptates assumenda nesciunt aliquam error nihil saepe velit dicta repudiandae non nam repellendus unde ipsam cumque officiis perferendis.</p>
+    </div>
+    <br><br>
+</body>
+</html>
